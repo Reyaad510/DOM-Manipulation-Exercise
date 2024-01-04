@@ -1,21 +1,27 @@
 1. Select the section with an id of container without using querySelector.
 
+const containerID = document.getElementById("container");
+console.log(containerID);
 
 
 2. Select the section with an id of container using querySelector.
-
+ const containerID = document.querySelector("#container");
+ console.log(containerID);
 
 
 3. Select all of the list items with a class of “second”.
-
+const liSeconds = document.querySelectorAll("li.second");
+console.log(liSeconds);
 
 
 4. Select a list item with a class of third, but only the list item inside of the ol tag.
-
+const olThird = document.querySelector("ol .third");
+console.log(olThird);
 
 
 5. Give the section with an id of container the text “Hello!”.
-
+const containerID = document.querySelector("#container");
+containerID.innerText = "Hello";
 
 
 6. Add the class main to the div with a class of footer.
