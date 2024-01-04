@@ -15,5 +15,5 @@
 // console.log(olThird);
 
 // Question 5
-const containerID = document.querySelector("#container");
-containerID.innerText = "Hello";
+// const containerID = document.querySelector("#container");
+// containerID.innerText = "Hello";
