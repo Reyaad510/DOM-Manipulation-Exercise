@@ -25,27 +25,39 @@ containerID.innerText = "Hello";
 
 
 6. Add the class main to the div with a class of footer.
-
+let divFooter = document.querySelector(".footer");
+divFooter.classList.add("main");
+console.log(divFooter);
 
 
 7. Remove the class main on the div with a class of footer.
-
+let divFooter = document.querySelector(".footer");
+divFooter.classList.add("main");
+divFooter.classList.remove("main");
+console.log(divFooter);
 
 
 8. Create a new li element.
 
-
+const newLi = document.createElement("li");
 
 9. Give the li the text “four”.
 
-
+newLi.innerText = "Four";
 
 10. Append the li to the ul element.
-
-
+const ul = document.querySelector("ul");
+ul.append(newLi);
 
 11. Loop over all of the lis inside the ol tag and give them a background color of “green”.
+const listItems = document.querySelectorAll("ol li");
+console.log(listItems);
 
+for (let listItem of listItems) {
+  listItem.style.backgroundColor = "green";
+}
 
 
 12. Remove the div with a class of footer
+let footerDiv = document.querySelector(".footer");
+footerDiv.remove();
